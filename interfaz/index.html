@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ 
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Listado de Productos</h1>
+
+    <div id="productosContainer">
+        <table id="productosTable">
+            <tr>
+                <th>Referencia</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Precio por Unidad</th>
+                <th>Cantidad</th>
+                <th>Descuento</th>
+                <th>Total</th>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Agregar Producto</h2>
+
+    <form id="agregarForm">
+        <label for="referenciaInput">Referencia:</label>
+        <input type="text" id="referenciaInput" required>
+
+        <label for="nombreInput">Nombre:</label>
+        <input type="text" id="nombreInput" required>
+
+        <label for="categoriaInput">Categoría:</label>
+        <select id="categoriaInput" required>
+            <option value="personal">Personal</option>
+            <option value="miscelanea">Miscelánea</option>
+            <option value="hogar">Hogar</option>
+        </select>
+
+        <label for="precioInput">Precio por Unidad:</label>
+        <input type="number" id="precioInput" required>
+
+        <label for="cantidadInput">Cantidad:</label>
+        <input type="number" id="cantidadInput" required>
+
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Buscar por Categoría</h2>
+
+    <form id="buscarForm">
+        <label for="categoriaBusquedaInput">Categoría:</label>
+        <select id="categoriaBusquedaInput" required>
+            <option value="personal">Personal</option>
+            <option value="miscelanea">Miscelánea</option>
+            <option value="hogar">Hogar</option>
+        </select>
+
+        <button type="submit">Buscar</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
